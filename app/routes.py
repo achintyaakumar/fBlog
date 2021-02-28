@@ -8,6 +8,7 @@ from datetime import datetime
 from app.email import send_password_reset_email
 from flask_babel import _, get_locale
 from app.translate import translate
+from guess_language import guess_language
 
 @app.before_request
 def before_request():
